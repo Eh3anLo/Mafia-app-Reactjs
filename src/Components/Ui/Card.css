@@ -1,0 +1,77 @@
+label {
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+.card {
+  width: calc(100% / 3 - 25px);
+  height: 150px;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 0 5px;
+  margin: 5px 5px;
+  border: 1px solid transparent;
+}
+.card .card-body {
+  width: 100%;
+  height: 100%;
+}
+.card .card-img {
+  width: fit-content;
+  height: 105px;
+  margin: auto;
+  margin-top: 2px;
+}
+.card-img > img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  border-radius: 20px;
+}
+.card .card-check {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.input {
+  /* position: absolute;
+  display: block;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none; */
+  display: none;
+  user-select: none ;
+}
+.checkmark {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  margin-right: 8px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.checkmark::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  left: 33%;
+  top: 16%;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2.3px 2.3px 0;
+  transition: all ease 0.1s;
+  transform: rotate(45deg);
+}
+.input:checked ~ .card-body > .card-check > span.checkmark::after {
+  opacity: 1;
+}
+
+/* mafi or citezen group card style */
+
