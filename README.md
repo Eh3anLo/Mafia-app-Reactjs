@@ -1,7 +1,6 @@
-# Getting Start With Mafia app
-
-### `Run the app`
-
-to run app in your local :
-
-thsi is going to hel;p the maste ijjsdijf q   
+# About
+  This mafia app just divide roles for starting playing mafia.
+## Run
+1. first install npm using `npm install`
+2. then run `npm start` to start the project.
+3. enjoy 😁🌹
